@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha() {
+
+        document.write("<br>");
+    }
+	
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+//////////////////////////////////////////////////////////////////////////////////////	
+	var idadeDaPessoa = parseInt(prompt("Informe sua idade"));
+	
+
+	if(idadeDaPessoa <= 15) {
+	  mostra("Você não tem idade para votar.");
+	}
+	
+
+	if(idadeDaPessoa >= 16 && idadeDaPessoa <= 17) {
+	   mostra("Na sua idade você pode votar, mas não è obrigatório");
+	 }  
+	   
+	 if(idadeDaPessoa >= 18) {
+		mostra("Na sua idade é obrigatório votar");
+	}	
+	   
+</script>

@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<script>
+
+		function pulaLinha() {
+
+        document.write("<br>");
+    }
+	
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+//////////////////////////////////////////////////////////////////////////
+var multiplicador = parseInt(prompt("Informe o número para ser multiplicado na tabuada"));
+
+for(var numeroFixo = 1; numeroFixo <= 10 ; numeroFixo++) {
+    mostra(multiplicador * numeroFixo);
+   
+}
+
+
+</script>
