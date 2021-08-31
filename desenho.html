@@ -1,0 +1,106 @@
+<meta charset="UTF-8">
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+	
+	var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    pincel.fillStyle = 'black';
+    pincel.fillRect(0, 0, 600, 400);
+	
+   function desenhaCirculo(x, y, raio, cor) {
+
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * Math.PI);
+        pincel.fill();
+    }
+
+    function limpaTela() {
+
+        pincel.clearRect(0, 0, 600, 400);
+    }
+	
+	function desenhaLua() {
+	
+		desenhaCirculo(50, 50, 20, 'white')
+		desenhaCirculo(68, 50, 20, 'black')
+	
+	}
+	
+	function desenhaEstrelinhas() {
+	
+		desenhaCirculo(22, 99, 2, 'white');
+		desenhaCirculo(220, 50, 2, 'white');
+		desenhaCirculo(140, 50, 2, 'white');
+		desenhaCirculo(349, 60, 2, 'white');
+		desenhaCirculo(45, 222, 2, 'white');
+		desenhaCirculo(120, 110, 2, 'white');
+		desenhaCirculo(111, 124, 2, 'white');
+		desenhaCirculo(300, 139, 2, 'white');
+		desenhaCirculo(430, 156, 2, 'white');
+		desenhaCirculo(290, 112, 2, 'white');
+		desenhaCirculo(109, 162, 2, 'white');
+		desenhaCirculo(550, 176, 2, 'white');
+		desenhaCirculo(493, 390, 2, 'white');
+		desenhaCirculo(323, 123, 2, 'white');
+		desenhaCirculo(222, 120, 2, 'white');
+		desenhaCirculo(90, 222, 2, 'white');
+		desenhaCirculo(121, 339, 2, 'white');
+		desenhaCirculo(472, 287, 2, 'white');
+		desenhaCirculo(531, 101, 2, 'white');
+		desenhaCirculo(299, 333, 2, 'white');
+		desenhaCirculo(448, 290, 2, 'white');
+		desenhaCirculo(309, 111, 2, 'white');
+		desenhaCirculo(288, 288, 2, 'white');
+		desenhaCirculo(578, 326, 2, 'white');
+		desenhaCirculo(122, 289, 2, 'white');
+		desenhaCirculo(374, 174, 2, 'white');
+		desenhaCirculo(162, 344, 2, 'white');
+		desenhaCirculo(433, 23, 2, 'white');
+		desenhaCirculo(100, 44, 2, 'white'); 
+		desenhaCirculo(20, 100, 2, 'white');
+		desenhaCirculo(240, 240, 2, 'white');
+		desenhaCirculo(229, 230, 2, 'white');
+		desenhaCirculo(199, 222, 2, 'white');
+		desenhaCirculo(199, 290, 2, 'white');
+		desenhaCirculo(134, 250, 2, 'white');
+		desenhaCirculo(299, 240, 2, 'white');
+		desenhaCirculo(159, 210, 2, 'white');
+		desenhaCirculo(259, 258, 2, 'white');
+		desenhaCirculo(192, 257, 2, 'white');
+		desenhaCirculo(222, 212, 2, 'white');
+		desenhaCirculo(199, 220, 2, 'white');
+		desenhaCirculo(248, 111, 2, 'white');
+		desenhaCirculo(449, 178, 2, 'white');
+		desenhaCirculo(124, 138, 2, 'white');
+		desenhaCirculo(112, 112, 2, 'white');
+		desenhaCirculo(339, 220, 2, 'white');
+		desenhaCirculo(339, 111, 2, 'white');
+		desenhaCirculo(444, 330, 2, 'white');
+		desenhaCirculo(392, 290, 2, 'white');
+		desenhaCirculo(392, 220, 2, 'white');
+		desenhaCirculo(512, 220, 2, 'white');
+		desenhaCirculo(512, 110, 2, 'white');
+		desenhaCirculo(444, 241, 2, 'white');
+		desenhaCirculo(220, 95, 2, 'white');
+		desenhaCirculo(199, 180, 2, 'white');
+		desenhaCirculo(300, 180, 2, 'white');
+		desenhaCirculo(249, 180, 2, 'white');
+		
+		
+	}	
+
+	pincel.fillStyle = 'white'
+	pincel.beginPath();
+	pincel.moveTo(500, 400);
+	pincel.lineTo(500, 400);
+	pincel.lineTo(500, 400);
+	pincel.fill();
+	
+	desenhaLua();
+	desenhaEstrelinhas();
+	
+	
+</script>
